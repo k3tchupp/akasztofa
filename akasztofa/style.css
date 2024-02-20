@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+ 
+html {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+ 
+ 
+ 
+#stickman {
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 100px;
+    margin: 20px auto;
+    background-color: white;
+}
+ 
+.head, .body, .left-arm, .right-arm, .left-leg, .right-leg {
+    position: absolute;
+    background-color: black;
+}
+ 
+.head {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 40px;
+    border-radius: 50%;
+}
+ 
+.body {
+    width: 10px;
+    height: 60px;
+    top: 40px;
+    left: 45px;
+    border-radius: 10px 10px 0 0;
+}
+ 
+.left-arm, .right-arm {
+    width: 10px;
+    height: 40px;
+    top: 5px;
+    border-radius: 10px;
+}
+ 
+.left-arm {
+    left: 35px;
+    transform-origin: bottom;
+    transform: rotate(-30deg);
+}
+ 
+.right-arm {
+    left: 55px;
+    transform-origin: bottom;
+    transform: rotate(30deg);
+}
+ 
+.left-leg, .right-leg {
+    width: 10px;
+    height: 40px;
+    top: 100px;
+    border-radius: 10px;
+}
+ 
+.left-leg {
+    left: 35px;
+    transform-origin: top;
+    transform: rotate(-30deg);
+}
+ 
+.right-leg {
+    left: 55px;
+    transform-origin: top;
+    transform: rotate(30deg);
+}
+ 
+#word {
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: 2px solid #333;
+    margin: 20px auto;
+    letter-spacing: 10px;
+}
+ 
+#input-area {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+ 
+#input-field {
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+ 
+#guess-btn {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+ 
+#result {
+    font-size: 1.5rem;
+    margin: 20px auto;
+}
